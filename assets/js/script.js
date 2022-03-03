@@ -136,7 +136,7 @@ $(document).ready(function() {
   }).on('setPosition', function (event, slick) {
   
   h = 0;
-  par =  $('.popular__slider .slick-slide');
+  par =  $('.popular__slider .slick-slide .popular-box');
    par.each(function() {
      
      
@@ -148,7 +148,7 @@ $(document).ready(function() {
 
 });
  
-  $('.popular__slider .slick-slide').css('height', h+'px');
+  $('.popular__slider .slick-slide .popular-box').css('height', h+'px');
  
 });
   /*=============/slider-popular==============*/
