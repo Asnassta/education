@@ -356,7 +356,7 @@ h2, .title {
   .header-search__select {
     background-color: #f9f9f9;
     border-radius: 26px 0px 0px 26px;
-    padding: 16px 0 18px 0;
+    padding: 18px 0;
     border-right: 1px solid #e1e1e1;
     /*position: relative;
 			&:after {
@@ -415,7 +415,7 @@ h2, .title {
       width: 100%;
       height: 100%;
       background-color: #fff;
-      padding: 16px 45px 18px 18px; }
+      padding: 18px 45px 18px 18px; }
       .header-search__input input::-webkit-input-placeholder {
         font-family: "Montserrat", sans-serif;
         font-size: 14px;
@@ -911,7 +911,7 @@ h2, .title {
       position: relative;
       z-index: 10; }
     .popular-box__info {
-      padding: 20px 18px;
+      padding: 20px 18px 24px;
       -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
       flex: 1 1 auto;
