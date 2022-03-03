@@ -930,6 +930,9 @@ h2, .title {
       display: -ms-flexbox;
       display: flex;
       margin-bottom: 10px; }
+      .popular-box__mark img {
+        width: 16px;
+        height: 16px; }
       .popular-box__mark span {
         display: inline-block;
         font-family: "Montserrat", sans-serif;
