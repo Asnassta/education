@@ -228,9 +228,9 @@ h2, .title {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: calc(100% + 30px);
+  width: calc(100% + 50px);
   position: absolute;
-  top: 50%;
+  top: calc(50% - 8px);
   left: 50%;
   z-index: 5;
   -webkit-transform: translate3d(-50%, -50%, 0);
@@ -239,8 +239,8 @@ h2, .title {
     display: inline-block;
     cursor: pointer; }
     .slider-arrows__arrow img {
-      width: 34px;
-      height: 33px;
+      width: 46px;
+      height: 34px;
       -o-object-fit: contain;
       object-fit: contain; }
     .slider-arrows__arrow_next {

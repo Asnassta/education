@@ -176,9 +176,9 @@ h2, .title {
 .slider-arrows {
 	display: flex;
 	justify-content: space-between;
-	width: calc(100% + 30px);
+	width: calc(100% + 50px);
 	position: absolute;
-	top: 50%;
+	top: calc(50% - 8px);
 	left: 50%;
 	z-index: 5;
 	transform: translate3d(-50%, -50% ,0);
@@ -186,8 +186,8 @@ h2, .title {
 		display: inline-block;
 		cursor: pointer;
 		img {
-			width: 34px;
-			height: 33px;
+			width: 46px;
+			height: 34px;
 			object-fit: contain;
 		}
 		&_next {
