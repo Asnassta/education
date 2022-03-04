@@ -39,6 +39,40 @@ $(document).ready(function() {
 	});
 	/*======/select=============*/
 
+  /*==========Label===========*/
+
+ $('.choice-form__select select').on('change', function() {
+ 
+ if($(this).val() == 0)
+ {
+   $(this).removeClass('active');
+ }
+ else
+ {
+   $(this).addClass('active');
+ }
+
+});
+
+ $( ".choice-form__select" ).click(function() {
+ 
+  $(this).find('label').addClass('up');
+  //$(this).find('.jqselect').addClass('opened dropdown');
+ 
+});
+
+ $( "*" ).click(function() {   
+    if($(this).find('label.up').next().hasClass('focused')  == false)
+    {
+      if($('label.up').next().find('select option:selected').val() == 0)
+      {
+        $(this).find('label').removeClass('up');
+      }
+    }
+  });
+
+ /*==========label===========*/
+
 	/*======Slider-intro=============*/
   $('.intro__slider').slick({
       infinite: true,

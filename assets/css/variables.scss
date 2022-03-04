@@ -2,12 +2,14 @@ $ff: 'Montserrat', sans-serif;
 $bl: #000;
 $wh: #fff;
 $gray: #e1e1e1;
+$gray2: #f7f9fa;
 $green: #17A43B;
 $yellow: #FFCF26;
 $purple: #4a3697;
 $blue: #0084ff;
 $dblue: #161627;
-$grad_gr-yl:  linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%);;
+$grad_gr-yl:  linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%);
+$grad_gr-bl:  linear-gradient(90deg, #17A43B 0%, #0084FF 98.04%);
 
 @mixin text-gradient {
 	background: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%);

@@ -1,5 +1,6 @@
 @import 'fonts.scss';
 @import 'variables.scss';
+@import 'page.scss';
 
 /*Reset
 ===============*/
@@ -58,9 +59,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	overflow: hidden;
 }
 
+
 h2, .title {
 	font-family: $ff;
 	font-size: 42px;
+	font-weight: 600;
+	color: $bl;
+	span {
+		@include text-gradient;
+	}
+}
+
+.title-big {
+	font-family: $ff;
+	font-size: 48px;
 	font-weight: 600;
 	color: $bl;
 	span {
@@ -110,6 +122,13 @@ h2, .title {
 	}
 	&_purple {
 		background-color: $purple;
+	}
+	&_yellow {
+		background-color: $yellow;
+		padding: 16px 48px;
+		&:before {
+			background: $grad_gr-bl;
+		}
 	}
 	&:hover {
 		background-color: inherit;
@@ -164,6 +183,7 @@ h2, .title {
 		top: 100%;
 		left: -20px;
 		z-index: 5;
+		min-width: 300px;
 		li {
 			margin-bottom: 10px;
 			&:last-child {
@@ -247,6 +267,103 @@ h2, .title {
 	}
 }
 
+.choice-form {
+	flex-wrap: wrap;
+	margin-bottom: -20px;
+	display: flex;
+	&__select {
+		position: relative;
+		padding-right: 18px;
+		margin-right: 30px;
+		margin-bottom: 20px;
+		flex: 1 1 auto;
+		max-width: 214px;
+		&:last-child {
+			margin-right: 0;
+		}
+		label {
+			font-family: $ff;
+			font-size: 14px;
+			font-weight: 500;
+			color: $bl;
+			white-space: nowrap;
+			position: absolute;
+			top: 5px;
+			left: 0;
+			z-index: 10;
+			width: calc(100% - 36px);
+			background-color: $gray2;
+			transition: all .3s linear;
+		}
+		select {
+			width: 100%;
+			&:focus {
+				border-image: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%) 1; 
+			}
+			&:focus+label, &.active + label  {
+				width: auto;
+    			height: auto;
+    			font-size: 12px;
+    			top: -13px;
+    			color: #0084ff;
+			}
+		}
+		.jqselect {
+        		transition: all .2s linear;
+     	}
+     	.jq-selectbox {
+      		width: 100%;
+      		padding: 6px 18px 9px 0;
+    		background-color: $gray2;
+    		border-bottom: 2px solid $gray;
+    		position: relative;
+    		z-index: 1!important;
+    		&:after {
+    			content: "";
+    			width: 16px;
+    			height: 16px;
+    			background: url("../images/arrow-select.svg") center no-repeat;
+    			position: absolute;
+    			top: 4px;
+    			right: 4px;
+    			z-index: 20;
+    			transition: all .2s linear;
+    		}
+    		&.opened {
+    			&:after {
+    				transform: translateY(-50%) rotate(180deg);
+    			}
+    		}
+    		&.focused {
+    			border-image: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%) 1; 
+    		}
+    		li {
+    			&.disabled {
+    				display: none;
+    			}
+    		}
+    	}
+    	.jq-selectbox__select-text {
+    		font-weight: 500;
+    	}
+    	.jq-selectbox__dropdown {
+    		top: calc(100% + 8px);
+    	}
+     	label.up + .jqselect {
+       		z-index: 20!important;
+     	}
+     	label.up,
+   		label.up,
+   		label.up {
+    		width: auto;
+    		height: auto;
+    		font-size: 12px;
+    		top: -13px;
+    		color: #0084ff; 
+    		}
+	}
+}
+
 /*================Header=============*/
 .header {
 	&__inner {
@@ -256,6 +373,7 @@ h2, .title {
 		}
 	}
 	&__logo {
+		display: block;
 		margin-right: 7px;
 		margin-left: -100px;
 		img {
@@ -290,7 +408,7 @@ h2, .title {
 		&__select {
 			background-color: #f9f9f9;
 			border-radius: 26px 0px 0px 26px;
-			padding: 18px 0;
+			padding: 20px 0 16px;
 			border-right: 1px solid #e1e1e1;
 			/*position: relative;
 			&:after {
@@ -740,12 +858,15 @@ h2, .title {
 	}
 	&__inner {
 		display: flex;
+		flex-wrap: wrap;
 		margin-right: -30px;
+		margin-bottom: -30px;
 		margin-top: 35px;
 	}
 	&__item {
 		width: calc(25% - 30px);
 		margin-right: 30px;
+		margin-bottom: 30px;
 	}
 	&__slider-wrapper {
 		position: relative;
@@ -810,7 +931,7 @@ h2, .title {
 			z-index: 10;
 		}
 		&__info {
-			padding: 20px 18px 24px;
+			padding: 20px 18px 22px;
 			flex: 1 1 auto;
 			display: flex;
 			flex-direction: column;
@@ -1368,6 +1489,14 @@ h2, .title {
 	h2, .title {
 		font-size: 35px;
 	}
+	.title-big {
+		font-size: 35px;
+	}
+	.btn {
+		&_yellow {
+			padding: 16px 30px;
+		}
+	}
 	.header {
 		&-menu {
 			&__lang {
@@ -1541,6 +1670,9 @@ h2, .title {
 	h2, .title {
 		font-size: 25px;
 	}
+	.title-big {
+		font-size: 25px;
+	}
 	.header {
 		&__logo {
 			max-width: 80%;
@@ -1624,6 +1756,13 @@ h2, .title {
 		}
 		&-box {
 			padding: 12px;
+		}
+	}
+	.choice-form {
+		&__select {
+			width: 100%;
+			max-width: 100%;
+			margin-right: 0;
 		}
 	}
 }

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="assets/css/jquery.formstyler.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<title>Электронное образование Республики Башкортостан</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="heart" viewBox="0 0 16 16">
+			<g clip-path="url(#clip0_2_39)">
+				<path d="M7.99999 2.74799L7.28299 2.01099C5.59999 0.280988 2.51399 0.877988 1.39999 3.05299C0.876987 4.07599 0.758987 5.55299 1.71399 7.43799C2.63399 9.25299 4.54799 11.427 7.99999 13.795C11.452 11.427 13.365 9.25299 14.286 7.43799C15.241 5.55199 15.124 4.07599 14.6 3.05299C13.486 0.877988 10.4 0.279988 8.71699 2.00999L7.99999 2.74799ZM7.99999 15C-7.33301 4.86799 3.27899 -3.04001 7.82399 1.14299C7.88399 1.19799 7.94299 1.25499 7.99999 1.31399C8.05641 1.25504 8.11512 1.19833 8.17599 1.14399C12.72 -3.04201 23.333 4.86699 7.99999 15Z"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner">
+				<div class="container">
+					<div class="header__row">
+						<a href="/" class="header__logo">
+							<img src="assets/images/logo.png" alt="">
+						</a>
+						<div class="burger">
+							<span class="burger__item"></span>
+						</div>
+						<div class="header-search">
+							<div class="header-search__inner">
+								<form action="#">
+									<div class="header-search__select">
+										<select>
+											<option value="0" disabled selected>Тематика</option>
+											<option value="1">Для школьников</option>
+											<option value="2">Для  студентов</option>
+											<option value="3">Дополнительное профессиональное образование</option>
+										</select>
+									</div>
+									<div class="header-search__input">
+										<input type="search" placeholder="Поиск по образовательным ресурсам">
+										<button type="submit">
+											<img src="assets/images/search.svg" alt="">
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="header-menu">
+							<div class="header-menu__lang">
+								<select>
+									<option value="1">Русский</option>
+									<option value="2">Башкирский</option>
+								</select>
+							</div>
+							<div class="header-menu__buttons">
+								<a href="#">
+									<img src="assets/images/heart.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="assets/images/eyeglasses.svg" alt="">
+								</a>
+							</div>
+							<div class="header-menu__btn">
+								<a href="#" class="btn">Личный кабинет</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__inner header__inner_mobile">
+				<div class="container">
+					<div class="header__row">
+						<nav class="header__nav">
+							<ul>
+								<li>
+									<a href="#" class="link">Главная</a>
+								</li>
+								<li class="link-drop">
+									<a href="#" class="link link-arrow">Проекты</a>
+									<div class="link__dropdown">
+										<ul>
+											<li><a href="#" class="link">Проект</a></li>
+											<li><a href="#" class="link">Проект</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="link">Обучение</a>
+								</li>
+								<li>
+									<a href="#" class="link">ВУЗы РБ</a>
+								</li>
+								<li class="link-drop">
+									<a href="#" class="link link-arrow">Сервисы</a>
+									<div class="link__dropdown">
+										<ul>
+											<li><a href="#" class="link">Сервис</a></li>
+											<li><a href="#" class="link">Сервис</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="link-drop">
+									<a href="#" class="link link-arrow">О портале</a>
+									<div class="link__dropdown">
+										<ul>
+											<li><a href="#" class="link">Проект</a></li>
+											<li><a href="#" class="link">Проект</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<div class="header-social">
+							<a href="#" class="header-social__icon" target="blank"><img src="assets/images/vk-icon.svg" alt=""></a>
+							<a href="#" class="header-social__icon" target="blank"><img src="assets/images/odnoklassniki-icon.svg" alt=""></a>
+							<a href="#" class="header-social__icon" target="blank"><img src="assets/images/inst-icon.svg" alt=""></a>
+							<a href="#" class="header-social__icon" target="blank"><img src="assets/images/facebook-icon.svg" alt=""></a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</header>
+		<main class="main page page_course-details">
+			<div class="page-intro">
+				<div class="container">
+					<div class="page-intro__head">
+						<div class="page-intro__title">Основы технологического предпринимательства и инновационной деятельности</div>
+						<div class="page-intro__btn">
+							<a href="#" class="btn btn_yellow">Изучить курс</a>
+						</div>
+					</div>
+					<div class="breadcrumbs">
+						<a href="#" class="breadcrumbs__item">Обучение</a>
+						<a href="#" class="breadcrumbs__item">Дополнительное образование</a>
+					</div>
+				</div>
+			</div><!--/page-intro-->
+			<div class="course">
+				<div class="course__header">
+					<div class="container">
+						<div class="course-stat">
+							<div class="course-stat__item">
+								<img src="assets/images/heart_big.svg" alt="">
+								<div><span>5600</span> пользователям понравился курс</div>
+							</div>
+							<div class="course-stat__item">
+								<img src="assets/images/display-icon.svg" alt="">
+								<div><span>10000</span> просмотров</div>
+							</div>
+						</div>
+						<div class="course__gos">
+							<a href="#" target="blank">
+								<img src="assets/images/gos.svg" alt="">
+							</a>
+						</div>
+						<div class="course-social">
+							<div class="course-social__description">Поделиться:</div>
+							<a href="#" class="course-social__icon" target="blank">
+								<img src="assets/images/vk-icon.svg" alt="">
+							</a>
+							<a href="#" class="course-social__icon" target="blank">
+								<img src="assets/images/fb-icon_2.svg" alt="">
+							</a>
+							<a href="#" class="course-social__icon" target="blank">
+								<img src="assets/images/odnoklassniki-icon.svg" alt="">
+							</a>
+							<a href="#" class="course-social__icon" target="blank">
+								<img src="assets/images/tg-icon.svg" alt="">
+							</a>
+							<a href="#" class="course-social__icon" target="blank">
+								<img src="assets/images/twit-icon.svg" alt="">
+							</a>
+							<a href="#" class="course-social__icon" target="blank">
+								<img src="assets/images/wtsp-icon.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div><!--/course__header-->
+				<div class="course__content">
+					<div class="container">
+						<div class="course__inner">
+							<div class="course__description">
+								<p>С 30 ноября по 16 декабря 2021 года Банк России совместно с Агентством стратегических инициатив проводит четвертый Всероссийский онлайн-зачет по финансовой грамотности (далее – Зачет).</p>
+								<p>Любой желающий может проверить, насколько хорошо он ориентируется в финансовых вопросах, и получить индивидуальные рекомендации, чтобы повысить уровень финансовой грамотности.</p>
+								<p>В формате Личного зачета можно проверить свои знания по темам, которые касаются кредитов и депозитов, пенсионных накоплений и страхования, инвестиций и правил защиты от мошенников.</p>
+								<p>Онлайн-зачет разделен на два уровня сложности: базовый (для тех, кто только начинает разбираться в финансах) и продвинутый (для тех, кто готов к сложным вопросам). В каждом уровне по 30 вопросов. Количество попыток не ограничено, на каждую дается один час (можно пройти намного быстрее). При верном ответе на 20 и более вопросов участник получит именной сертификат и возможность поделиться результатами в соцсетях. Дополнительно каждый участник получит индивидуальные рекомендации, чтобы восполнить пробелы в своих знаниях.</p>
+								<p>В этом году у участников впервые появится возможность пройти зачет не только индивидуально, но и попробовать свои силы в командном соревновании. Для этого на сайте зачета необходимо зарегистрировать команду (не более пяти человек в каждой команде). У команды будет по одной попытке прохождения Командного зачета в каждый игровой день (14 и 16 декабря 2021 года, с 00.00 и до 23.59 по московскому времени). На каждую попытку прохождения Командного зачета выделяется 15 минут. По итогам командного обсуждения каждого вопроса Капитан выбирает ответ на странице Командного зачета. После прохождения Командного зачета на почту каждого участника приходит сертификат и письмо с результатами прохождения. По итогам каждого игрового дня Командного зачета составляется рейтинг, в том числе по регионам регистрации команд. Если команда участвует и в первом, и во втором игровом дне, в финальном рейтинге засчитывается ее лучший результат.</p>
+							</div>
+							<div class="course-box">
+								<div class="course-box__item">
+									<div class="course-box__title">Дисциплина:</div>
+									<div class="course-box__info">
+										<p>Инноватика</p>
+										<p>Предпринимательство</p>
+									</div>
+								</div>
+								<div class="course-box__item">
+									<div class="course-box__title">Целевая аудитория:</div>
+									<div class="course-box__info">Все категории граждан</div>
+								</div>
+								<div class="course-box__item">
+									<div class="course-box__title">Год разработки:</div>
+									<div class="course-box__info">2016-2018</div>
+								</div>
+								<div class="course-box__item">
+									<div class="course-box__title">Итоговый документ:</div>
+									<div class="course-box__info">Электронный сертификат</div>
+								</div>
+								<div class="course-box__item">
+									<div class="course-box__title">Условия доступа к ресурсу:</div>
+									<div class="course-box__info">Ресурс бесплатный и доступен только после регистрации</div>
+								</div>
+								<div class="course-box__item">
+									<div class="course-box__title">Разработчики ресурса:</div>
+									<div class="course-box__info">
+										<p>Маннапов Альберт Раисович, </p>
+										<p>Маннапов Раис Габдулхакович</p>
+									</div>
+								</div>
+								<div class="course-box__btn">
+									<a href="#" class="btn btn_yellow">Изучить курс</a>
+								</div>
+							</div><!--/course-box-->
+						</div>
+					</div>
+				</div>
+			</div><!--/course-->
+			<section class="reccomend">
+				<div class="container">
+					<h2 class="title"><span>Рекомендованные</span> ресурсы</h2>
+					<div class="reccomend__inner">
+						<div class="popular__inner">
+								<div class="popular__item">
+									<div class="popular-box">
+										<div class="popular-box__like">
+											<svg>
+												<use xlink:href="#heart"></use>
+											</svg>
+										</div>
+										<div class="popular-box__photo">
+											<img src="assets/images/tecno-img.png" alt="">
+										</div>
+										<div class="popular-box__info">
+											<div>
+												<div class="popular-box__mark">
+													<img src="assets/images/bookmark-check.svg" alt="">
+													<span>Высшее образование</span>
+												</div>
+												<div class="popular-box__title">Основы технологического предпринимательства</div>
+												<div class="popular-box__description">Курс разбит на отдельные модули, посвящённые отдельным аспектам создания инноваций и технологического бизнеса.</div>
+											</div>
+											<div class="popular-box__btn">
+												<a href="#" class="btn">Подробнее</a>
+											</div>
+										</div>
+									</div><!--/popular-box-->
+								</div><!--/popular__item-->
+								<div class="popular__item">
+									<div class="popular-box">
+										<div class="popular-box__like">
+											<svg>
+												<use xlink:href="#heart"></use>
+											</svg>
+										</div>
+										<div class="popular-box__photo">
+											<img src="assets/images/mind.png" alt="">
+										</div>
+										<div class="popular-box__info">
+											<div>
+												<div class="popular-box__mark">
+													<img src="assets/images/bookmark-check.svg" alt="">
+													<span>Высшее образование</span>
+												</div>
+												<div class="popular-box__title">Подготовка к ЕГЭ</div>
+												<div class="popular-box__description">Курс разбит на отдельные модули, посвящённые отдельным аспектам создания инноваций и технологического бизнеса.</div>
+											</div>
+											<div class="popular-box__btn">
+												<a href="#" class="btn">Подробнее</a>
+											</div>
+										</div>
+									</div><!--/popular-box-->
+								</div><!--/popular__item-->
+								<div class="popular__item">
+									<div class="popular-box">
+										<div class="popular-box__like">
+											<svg>
+												<use xlink:href="#heart"></use>
+											</svg>
+										</div>
+										<div class="popular-box__photo">
+											<img src="assets/images/roket-book.png" alt="">
+										</div>
+										<div class="popular-box__info">
+											<div>
+												<div class="popular-box__mark">
+													<img src="assets/images/bookmark-check.svg" alt="">
+													<span>Высшее образование</span>
+												</div>
+												<div class="popular-box__title">Образовательный ресурс Открытая школа</div>
+												<div class="popular-box__description">Курс разбит на отдельные модули, посвящённые отдельным аспектам создания инноваций и технологического бизнеса.</div>
+											</div>
+											<div class="popular-box__btn">
+												<a href="#" class="btn">Подробнее</a>
+											</div>
+										</div>
+									</div><!--/popular-box-->
+								</div><!--/popular__item-->
+								<div class="popular__item">
+									<div class="popular-box">
+										<div class="popular-box__like">
+											<svg>
+												<use xlink:href="#heart"></use>
+											</svg>
+										</div>
+										<div class="popular-box__photo">
+											<img src="assets/images/notebook_2.png" alt="">
+										</div>
+										<div class="popular-box__info">
+											<div>
+												<div class="popular-box__mark">
+													<img src="assets/images/bookmark-check.svg" alt="">
+													<span>Высшее образование</span>
+												</div>
+												<div class="popular-box__title">Электронный обучающий курс Педагог</div>
+												<div class="popular-box__description">Курс разбит на отдельные модули, посвящённые отдельным аспектам создания инноваций и технологического бизнеса.</div>
+											</div>
+											<div class="popular-box__btn">
+												<a href="#" class="btn">Подробнее</a>
+											</div>
+										</div>
+									</div><!--/popular-box-->
+								</div><!--/popular__item-->
+							</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer-nav">
+						<div class="footer-nav__links">
+							<ul>
+								<li><a href="#" class="footer__link">Главная</a></li>
+								<li><a href="#" class="footer__link">Обучение</a></li>
+								<li><a href="#" class="footer__link">О проекте</a></li>
+								<li><a href="#" class="footer__link">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="footer-nav__contact">
+							<div class="footer-nav__contact-desc">
+								<div>Телефон:</div>
+								<div>E-mail:</div>
+							</div>
+							<div class="footer-nav__contact-links">
+								<a href="tel:+73472588128" class="footer__link">+7 (347) 258-81-28</a>
+								<a href="mailto:edu@bashkortostan.ru" class="footer__link">edu@bashkortostan.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__buttons">
+						<a href="#" class="footer__btn" target="blank">
+							<img src="assets/images/appstore.svg" alt="">
+						</a>
+						<a href="#" class="footer__btn" target="blank">
+							<img src="assets/images/googleplay.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="footer__inner">
+					<div class="footer__links">
+						<a href="#" class="footer__link">Вопросы и ответы</a>
+						<a href="#" class="footer__link">ВУЗы РБ</a>
+						<a href="#" class="footer__link">Новости портала</a>
+						<a href="#" class="footer__link">Фотогалерея</a>
+						<a href="#" class="footer__link">Видеогалерея</a>
+						<a href="#" class="footer__link">Обучение</a>
+						<a href="#" class="footer__link">Библиотечные ресурсы</a>
+						<a href="#" class="footer__link">Дневники</a>
+						<a href="#" class="footer__link">Центр общественного доступа РБ</a>
+						<a href="#" class="footer__link">Востребованные профессии</a>
+						<a href="#" class="footer__link">Учитесь в вузах РБ</a>
+						<a href="#" class="footer__link">Финансовая грамотность</a>
+					</div>
+					<div class="footer__col footer__col_search">
+						<div class="footer-search">
+							<form action="#">
+								<div class="footer-search__inner">
+									<input type="search" placeholder="Поиск по порталу">
+									<button type="submit">
+										<img src="assets/images/search_2.svg" alt="">
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="footer-social">
+							<a href="#" class="footer-social__icon" target="blank">
+								<img src="assets/images/vk-icon_wh.svg" alt="">
+							</a>
+							<a href="#" class="footer-social__icon" target="blank">
+								<img src="assets/images/odnoklassniki-icon_wh.svg" alt="">
+							</a>
+							<a href="#" class="footer-social__icon" target="blank">
+								<img src="assets/images/inst-icon_wh.svg" alt="">
+							</a>
+							<a href="#" class="footer-social__icon" target="blank">
+								<img src="assets/images/fb-icon_wh.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__inner">
+					<div class="footer__copyright">
+						<p>Электронное образование Республики Башкортостан © 2022. </p>
+						<p>Все права защищены (Министерство цифрового развития государственного управления Республики Башкортостан).</p>
+					</div>
+					<div class="footer__col">
+						<a href="#" class="footer-glasses">
+							<img src="assets/images/glasses_wh.svg" alt="">
+							<span class="footer-glasses__desc">Версия для слабовидящих</span>
+						</a>
+						<div class="footer__developer">Разработчик портала — Demius Group</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/jquery.formstyler.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

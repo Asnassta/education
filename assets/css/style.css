@@ -26,6 +26,316 @@
   font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
 
+.page {
+  margin-top: 40px; }
+  .page_course-details {
+    margin-top: 0; }
+  .page__title {
+    margin-bottom: 52px; }
+  .page-intro {
+    padding: 40px 0 56px;
+    background: -webkit-gradient(linear, left top, right top, from(#17A43B), color-stop(69.27%, #0084FF), color-stop(98.44%, #FFCF26));
+    background: -webkit-linear-gradient(left, #17A43B 0%, #0084FF 69.27%, #FFCF26 98.44%);
+    background: -o-linear-gradient(left, #17A43B 0%, #0084FF 69.27%, #FFCF26 98.44%);
+    background: linear-gradient(90deg, #17A43B 0%, #0084FF 69.27%, #FFCF26 98.44%); }
+    .page-intro__head {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 35px; }
+    .page-intro__title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.2;
+      margin-right: 145px;
+      max-width: 65%; }
+    .page-intro__btn {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      min-width: 196px; }
+      .page-intro__btn .btn_yellow:hover {
+        color: #000;
+        background-color: #fff; }
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .breadcrumbs__item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 18px;
+    position: relative; }
+    .breadcrumbs__item:after {
+      content: "";
+      width: 8px;
+      height: 16px;
+      background: url("../images/arrow_wh.svg") center no-repeat;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 1;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+    .breadcrumbs__item:last-child {
+      margin-right: 0;
+      padding-right: 0; }
+      .breadcrumbs__item:last-child:after {
+        display: none; }
+
+.resources__block {
+  background-color: #f7f9fa;
+  padding: 74px 0 98px; }
+
+.resources__inner .popular__inner {
+  margin-top: 55px; }
+
+.course__header {
+  border: 1px solid #e1e1e1;
+  padding: 36px 0; }
+  .course__header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .course__header .container > * {
+      margin-bottom: 30px; }
+
+.course-stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 90px; }
+  .course-stat__item {
+    margin-right: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2; }
+    .course-stat__item span {
+      font-weight: 600; }
+    .course-stat__item img {
+      margin-right: 13px; }
+    .course-stat__item:last-child {
+      margin-right: 0; }
+
+.course__gos {
+  margin-right: 100px; }
+
+.course-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .course-social__description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-right: 30px; }
+  .course-social__icon {
+    margin-right: 14px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
+    .course-social__icon img {
+      height: 16px; }
+    .course-social__icon:last-child {
+      margin-right: 0; }
+    .course-social__icon:hover {
+      -webkit-transform: scale(1.2, 1.2);
+      -ms-transform: scale(1.2, 1.2);
+      transform: scale(1.2, 1.2); }
+
+.course__content {
+  padding-bottom: 50px; }
+
+.course__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.course__description {
+  width: 68%;
+  padding-top: 30px;
+  padding-right: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.4; }
+  .course__description p {
+    margin-bottom: 25px; }
+    .course__description p:last-child {
+      margin-bottom: 0; }
+
+.course-box {
+  width: 32%;
+  background-color: #f7f9fa;
+  padding: 32px 65px 45px 40px; }
+  .course-box__item {
+    padding-left: 32px;
+    position: relative;
+    margin-bottom: 45px; }
+    .course-box__item:before {
+      content: "";
+      width: 16px;
+      height: 2px;
+      background-color: #0084ff;
+      border-radius: 10px;
+      position: absolute;
+      top: 9px;
+      left: 0;
+      z-index: 1; }
+  .course-box__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.2; }
+  .course-box__info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.2; }
+  .course-box__btn {
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+
+.reccomend {
+  background-color: #f7f9fa;
+  padding: 50px 0 100px; }
+  .reccomend__inner .popular__inner {
+    margin-top: 50px; }
+
+/*========Adaptive======*/
+@media (max-width: 1365px) {
+  .page-intro__title {
+    font-size: 28px; }
+  .breadcrumbs__item {
+    font-size: 14px; }
+  .course-stat {
+    margin-right: 48px; }
+    .course-stat__item {
+      font-size: 16px; }
+  .course__gos {
+    margin-right: 48px; }
+  .course__inner {
+    margin-right: -15px; }
+  .course__description {
+    font-size: 16px; }
+    .course__description p {
+      margin-bottom: 15px; }
+  .course-box {
+    padding: 32px 20px 40px 30px; }
+    .course-box__item {
+      margin-bottom: 35px; }
+    .course-box__title {
+      font-size: 16px; }
+    .course-box__info {
+      font-size: 16px; } }
+
+@media (max-width: 900px) {
+  .page {
+    margin-top: 30px; }
+    .page__title {
+      margin-bottom: 30px; }
+  .resources__block {
+    padding: 40px 0; }
+  .resources__inner .popular__inner {
+    margin-top: 30px; }
+  .course-stat {
+    width: 100%;
+    margin-right: 0; }
+  .course-social {
+    width: 100%; }
+  .course__description {
+    font-size: 14px; }
+    .course__description p {
+      margin-bottom: 10px; }
+  .course-box__item {
+    margin-bottom: 25px; }
+  .course-box__title {
+    font-size: 14px; }
+  .course-box__info {
+    font-size: 14px; }
+  .reccomend {
+    padding: 40px 0 50px; } }
+
+@media (max-width: 740px) {
+  .page-intro__title {
+    font-size: 20px;
+    margin-right: 40px; }
+  .course-stat__item {
+    font-size: 14px;
+    margin-right: 30px; }
+  .course-social__description {
+    font-size: 14px;
+    margin-right: 20px; }
+  .course__content {
+    padding-bottom: 30px; }
+  .course__inner {
+    margin-right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .course__description {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px; }
+  .course-box {
+    width: 100%; } }
+
+@media (max-width: 540px) {
+  .page-intro__head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .page-intro__title {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px; } }
+
+@media (max-width: 375px) {
+  .course-stat__item {
+    font-size: 12px; } }
+
 /*Reset
 ===============*/
 * {
@@ -115,6 +425,20 @@ h2, .title {
     -webkit-text-fill-color: transparent;
     color: #17A43B; }
 
+.title-big {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #000; }
+  .title-big span {
+    background: -webkit-gradient(linear, left top, right top, from(#17A43B), color-stop(98.04%, #FFCF26));
+    background: -webkit-linear-gradient(left, #17A43B 0%, #FFCF26 98.04%);
+    background: -o-linear-gradient(left, #17A43B 0%, #FFCF26 98.04%);
+    background: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #17A43B; }
+
 .btn {
   display: inline-block;
   padding: 15px 28px;
@@ -161,6 +485,14 @@ h2, .title {
       background: linear-gradient(90deg, #17A43B 0%, #0084FF 98.04%); }
   .btn_purple {
     background-color: #4a3697; }
+  .btn_yellow {
+    background-color: #FFCF26;
+    padding: 16px 48px; }
+    .btn_yellow:before {
+      background: -webkit-gradient(linear, left top, right top, from(#17A43B), color-stop(98.04%, #0084FF));
+      background: -webkit-linear-gradient(left, #17A43B 0%, #0084FF 98.04%);
+      background: -o-linear-gradient(left, #17A43B 0%, #0084FF 98.04%);
+      background: linear-gradient(90deg, #17A43B 0%, #0084FF 98.04%); }
   .btn:hover {
     background-color: inherit; }
 
@@ -215,7 +547,8 @@ h2, .title {
     position: absolute;
     top: 100%;
     left: -20px;
-    z-index: 5; }
+    z-index: 5;
+    min-width: 300px; }
     .link__dropdown li {
       margin-bottom: 10px; }
       .link__dropdown li:last-child {
@@ -304,6 +637,103 @@ h2, .title {
     transform: rotate(-45deg) translateX(0px);
     width: 100%; }
 
+.choice-form {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .choice-form__select {
+    position: relative;
+    padding-right: 18px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-width: 214px; }
+    .choice-form__select:last-child {
+      margin-right: 0; }
+    .choice-form__select label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      white-space: nowrap;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      z-index: 10;
+      width: calc(100% - 36px);
+      background-color: #f7f9fa;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
+    .choice-form__select select {
+      width: 100%; }
+      .choice-form__select select:focus {
+        -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#17A43B), color-stop(98.04%, #FFCF26)) 1;
+        -webkit-border-image: -webkit-linear-gradient(left, #17A43B 0%, #FFCF26 98.04%) 1;
+        -o-border-image: -o-linear-gradient(left, #17A43B 0%, #FFCF26 98.04%) 1;
+        border-image: -webkit-gradient(linear, left top, right top, from(#17A43B), color-stop(98.04%, #FFCF26)) 1;
+        border-image: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%) 1; }
+      .choice-form__select select:focus + label, .choice-form__select select.active + label {
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        top: -13px;
+        color: #0084ff; }
+    .choice-form__select .jqselect {
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+    .choice-form__select .jq-selectbox {
+      width: 100%;
+      padding: 6px 18px 9px 0;
+      background-color: #f7f9fa;
+      border-bottom: 2px solid #e1e1e1;
+      position: relative;
+      z-index: 1 !important; }
+      .choice-form__select .jq-selectbox:after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url("../images/arrow-select.svg") center no-repeat;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        z-index: 20;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      .choice-form__select .jq-selectbox.opened:after {
+        -webkit-transform: translateY(-50%) rotate(180deg);
+        -ms-transform: translateY(-50%) rotate(180deg);
+        transform: translateY(-50%) rotate(180deg); }
+      .choice-form__select .jq-selectbox.focused {
+        -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#17A43B), color-stop(98.04%, #FFCF26)) 1;
+        -webkit-border-image: -webkit-linear-gradient(left, #17A43B 0%, #FFCF26 98.04%) 1;
+        -o-border-image: -o-linear-gradient(left, #17A43B 0%, #FFCF26 98.04%) 1;
+        border-image: -webkit-gradient(linear, left top, right top, from(#17A43B), color-stop(98.04%, #FFCF26)) 1;
+        border-image: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%) 1; }
+      .choice-form__select .jq-selectbox li.disabled {
+        display: none; }
+    .choice-form__select .jq-selectbox__select-text {
+      font-weight: 500; }
+    .choice-form__select .jq-selectbox__dropdown {
+      top: calc(100% + 8px); }
+    .choice-form__select label.up + .jqselect {
+      z-index: 20 !important; }
+    .choice-form__select label.up,
+    .choice-form__select label.up,
+    .choice-form__select label.up {
+      width: auto;
+      height: auto;
+      font-size: 12px;
+      top: -13px;
+      color: #0084ff; }
+
 /*================Header=============*/
 .header__inner {
   border-bottom: 1px solid #e1e1e1; }
@@ -311,6 +741,7 @@ h2, .title {
     padding: 19px 27px; }
 
 .header__logo {
+  display: block;
   margin-right: 7px;
   margin-left: -100px; }
   .header__logo img {
@@ -356,7 +787,7 @@ h2, .title {
   .header-search__select {
     background-color: #f9f9f9;
     border-radius: 26px 0px 0px 26px;
-    padding: 18px 0;
+    padding: 20px 0 16px;
     border-right: 1px solid #e1e1e1;
     /*position: relative;
 			&:after {
@@ -834,11 +1265,15 @@ h2, .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: -30px;
+    margin-bottom: -30px;
     margin-top: 35px; }
   .popular__item {
     width: calc(25% - 30px);
-    margin-right: 30px; }
+    margin-right: 30px;
+    margin-bottom: 30px; }
   .popular__slider-wrapper {
     position: relative; }
   .popular-box {
@@ -911,7 +1346,7 @@ h2, .title {
       position: relative;
       z-index: 10; }
     .popular-box__info {
-      padding: 20px 18px 24px;
+      padding: 20px 18px 22px;
       -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
       flex: 1 1 auto;
@@ -1416,6 +1851,10 @@ h2, .title {
 @media (max-width: 860px) {
   h2, .title {
     font-size: 35px; }
+  .title-big {
+    font-size: 35px; }
+  .btn_yellow {
+    padding: 16px 30px; }
   .header-menu__lang {
     margin-right: 20px; }
   .header-menu__buttons {
@@ -1530,6 +1969,8 @@ h2, .title {
 @media (max-width: 540px) {
   h2, .title {
     font-size: 25px; }
+  .title-big {
+    font-size: 25px; }
   .header__logo {
     max-width: 80%;
     margin-left: -15%; }
@@ -1585,7 +2026,11 @@ h2, .title {
     .service__inner > * {
       width: 100%; }
   .service-box {
-    padding: 12px; } }
+    padding: 12px; }
+  .choice-form__select {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0; } }
 
 @media (max-width: 414px) {
   .btn {
