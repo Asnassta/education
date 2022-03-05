@@ -1,6 +1,7 @@
 @import 'fonts.scss';
 @import 'variables.scss';
 @import 'page.scss';
+@import 'list.scss';
 
 /*Reset
 ===============*/
@@ -142,6 +143,7 @@ h2, .title {
 	font-weight: 600;
 	color: $bl;
 	line-height: 1.2;
+	padding-bottom: 5px;
 	&:hover {
 		background: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%);
   		-webkit-background-clip: text;
@@ -161,7 +163,7 @@ h2, .title {
 			background: url("../images/arrow-down.svg") center no-repeat;
 			position: absolute;
 			right: 0;
-			bottom: 3px;
+			bottom: 8px;
 			z-index: 1;
 			transition: all .3s linear;
 		}
@@ -176,18 +178,26 @@ h2, .title {
 		border: 1px solid $gray;
 		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 20px;
-		padding: 15px 20px;
+		padding: 7px 0;
 		display: none;
 		flex-direction: column;
+		overflow: hidden;
 		position: absolute;
 		top: 100%;
 		left: -20px;
 		z-index: 5;
 		min-width: 300px;
 		li {
-			margin-bottom: 10px;
-			&:last-child {
-				margin-bottom: 0;
+			margin-right: 0!important;
+			@media(min-width: 741px) {
+				padding: 12px 30px;
+				a {
+					font-size: 14px;
+					font-weight: 500;
+				}
+				&:hover {
+					background-color: $gray2;
+				}
 			}
 		}
 	}
@@ -269,13 +279,12 @@ h2, .title {
 
 .choice-form {
 	flex-wrap: wrap;
-	margin-bottom: -20px;
+	margin-bottom: -25px;
 	display: flex;
 	&__select {
 		position: relative;
-		padding-right: 18px;
 		margin-right: 30px;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 		flex: 1 1 auto;
 		max-width: 214px;
 		&:last-child {
@@ -287,16 +296,18 @@ h2, .title {
 			font-weight: 500;
 			color: $bl;
 			white-space: nowrap;
+			padding: 2px 0;
 			position: absolute;
 			top: 5px;
 			left: 0;
 			z-index: 10;
-			width: calc(100% - 36px);
+			width: calc(100% - 18px);
 			background-color: $gray2;
 			transition: all .3s linear;
 		}
 		select {
 			width: 100%;
+			pointer-events: none;
 			&:focus {
 				border-image: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%) 1; 
 			}
@@ -328,6 +339,7 @@ h2, .title {
     			right: 4px;
     			z-index: 20;
     			transition: all .2s linear;
+    			pointer-events: none;
     		}
     		&.opened {
     			&:after {
@@ -362,6 +374,51 @@ h2, .title {
     		color: #0084ff; 
     		}
 	}
+	&__input {
+		position: relative;
+		margin-right: 30px;
+		margin-bottom: 25px;
+		flex: 1 1 auto;
+		max-width: 214px;
+		&:last-child {
+			margin-right: 0;
+		}
+		label {
+			font-family: $ff;
+			font-size: 14px;
+			font-weight: 500;
+			color: $bl;
+			white-space: nowrap;
+			padding: 2px 0;
+			position: absolute;
+			top: 5px;
+			left: 0;
+			z-index: 10;
+			width: calc(100% - 18px);
+			background-color: $gray2;
+			transition: all .3s linear;
+		}
+		input {
+			width: 100%;
+			padding: 6px 18px 5px 0;
+    		background-color: $gray2;
+    		border-bottom: 2px solid $gray;
+    		font-family: $ff;
+    		font-size: 14px;
+    		font-weight: 500;
+    		color: $bl;
+			&:focus {
+				border-image: linear-gradient(90deg, #17A43B 0%, #FFCF26 98.04%) 1; 
+			}
+			&:focus+label, &.active + label  {
+				width: auto;
+    			height: auto;
+    			font-size: 12px;
+    			top: -13px;
+    			color: #0084ff;
+			}
+		}
+	}
 }
 
 /*================Header=============*/
@@ -369,7 +426,7 @@ h2, .title {
 	&__inner {
 		border-bottom: 1px solid $gray;
 		&:nth-child(2) {
-			padding: 19px 27px;
+			padding: 19px 0 16px;
 		}
 	}
 	&__logo {
@@ -516,7 +573,7 @@ h2, .title {
 					}
 				}
 				&__dropdown {
-					min-width: auto;
+					min-width: 130px;
 					top: 20px;
 				} li {
 					padding: 12px;
@@ -1545,7 +1602,7 @@ h2, .title {
 				padding: 40px 20px 40px 10px;
 			}
 			&_mobile {
-				min-width: 70%;
+				width: 80%;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -1591,6 +1648,7 @@ h2, .title {
 	}
 	.link {
 		&__dropdown {
+			min-width: auto;
 			position: static;
 			border: none;
 			box-shadow: none;
@@ -1759,7 +1817,7 @@ h2, .title {
 		}
 	}
 	.choice-form {
-		&__select {
+		&__select, &__input {
 			width: 100%;
 			max-width: 100%;
 			margin-right: 0;

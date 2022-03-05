@@ -41,6 +41,20 @@ $(document).ready(function() {
 
   /*==========Label===========*/
 
+   $('.choice-form__input input').on('input', function() {
+ 
+
+ if($(this).val().length == 0)
+ {
+   $(this).removeClass('active');
+ }
+ else
+ {
+   $(this).addClass('active');
+ }
+
+});
+
  $('.choice-form__select select').on('change', function() {
  
  if($(this).val() == 0)
@@ -54,22 +68,34 @@ $(document).ready(function() {
 
 });
 
- $( ".choice-form__select" ).click(function() {
+$( ".choice-form__select label" ).click(function() {
  
-  $(this).find('label').addClass('up');
-  //$(this).find('.jqselect').addClass('opened dropdown');
+  $(this).addClass('up');
+  d = $(this).next().attr('id');
+  setTimeout(function() {
+   $('#'+d+' .jq-selectbox__select').trigger('click');
+}, 50);
+
  
 });
 
- $( "*" ).click(function() {   
-    if($(this).find('label.up').next().hasClass('focused')  == false)
-    {
-      if($('label.up').next().find('select option:selected').val() == 0)
+
+ setInterval(function() {
+   var elems = $(".jqselect");
+    var elemsTotal = elems.length;
+    for(var i=0; i<elemsTotal; ++i){
+      
+  if($(elems[i]).hasClass('opened') == false)
+   {
+      if($(elems[i]).parent().find('label.up').next().find('select option:selected').val() == 0)
       {
-        $(this).find('label').removeClass('up');
+       
+         $(elems[i]).parent().find('label.up').removeClass('up');
       }
     }
-  });
+}
+
+}, 800);
 
  /*==========label===========*/
 
